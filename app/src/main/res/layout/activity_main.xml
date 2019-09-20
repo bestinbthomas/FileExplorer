@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:maxLines="1"
+              android:id="@+id/HierarchyTxt" tools:text="Internal Storage/whatsapp/media/image"
+              android:textSize="18sp" android:textColor="@color/primaryTextColor" android:layout_margin="8dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:id="@+id/FilesListRecView"
+                                               android:layout_below="@id/HierarchyTxt"
+                                               android:layout_marginTop="8dp"
+    />
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/addTextFile"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/add_btn_back"
+            android:text=" "
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start"
+            android:id="@+id/optionsLayout"
+            android:background="@drawable/options_back"
+            android:elevation="3dp"
+            android:layout_alignParentBottom="true" tools:visibility="gone">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/rename"
+                  android:drawableTop="@drawable/ic_rename"
+                  android:id="@+id/rename"
+                  style="@style/myBottomItem"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/copy"
+                  android:drawableTop="@drawable/ic_copy"
+                  android:id="@+id/copy"
+                  style="@style/myBottomItem"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/move"
+                  android:drawableTop="@drawable/ic_cut"
+                  android:id="@+id/move"
+                  style="@style/myBottomItem"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/delete"
+                  android:drawableTop="@drawable/ic_delete"
+                  android:id="@+id/delete"
+                  style="@style/myBottomItem"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/share"
+                  android:drawableTop="@drawable/ic_share"
+                  android:id="@+id/share"
+                  style="@style/myBottomItem"/>
+    </LinearLayout>
+
+</RelativeLayout>

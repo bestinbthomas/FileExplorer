@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FIleExplorer</string>
+
+
+    <string name="rename">Rename</string>
+    <string name="copy">Copy</string>
+    <string name="move">Move</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <string name="item_count">%1$d items</string>
+    <string name="add">Add</string>
+</resources>
